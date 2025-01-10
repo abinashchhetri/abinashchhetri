@@ -52,7 +52,7 @@ const ExperienceCard = ({ experience }) => {
             {point}
           </li>
         ))}
-        <li className="text-blue-400">
+        <li className="text-blue-400 overflow-hidden">
           <a href={experience.link} target="_blank" rel="noopener noreferrer">
             {experience.link}
           </a>
