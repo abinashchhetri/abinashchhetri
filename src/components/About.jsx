@@ -4,6 +4,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
+import { gitLogo, linkedinLogo, XLogo } from "../assets";
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
     <motion.div
@@ -50,6 +51,30 @@ const About = () => {
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
+
+      <span className=" flex gap-4 items-center mt-5 ">
+        <a
+          href="https://github.com/abinashchhetri"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className=" h-12 " src={gitLogo} alt="Github" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/abinash-chhetri-790690315/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className=" h-12 " src={linkedinLogo} alt="LinkedIn" />
+        </a>
+        <a
+          href="https://x.com/AbinashChhetri0"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className=" h-12 " src={XLogo} alt="X" />
+        </a>
+      </span>
 
       <div className="mt-20 flex flex-wrap items-center justify-center gap-10">
         {services.map((service, index) => (

@@ -32,6 +32,9 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import Trigon from "./company/Trigon.jpg";
 import RupakNepali from "./company/RupakNepali.png";
+import gitLogo from "./git.svg";
+import linkedinLogo from "./linkedin.svg";
+import XLogo from "./XLogo.svg";
 
 export {
   logo,
@@ -66,4 +69,7 @@ export {
   RRINTERIOR,
   Trigon,
   RupakNepali,
+  gitLogo,
+  linkedinLogo,
+  XLogo,
 };
