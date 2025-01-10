@@ -52,6 +52,11 @@ const ExperienceCard = ({ experience }) => {
             {point}
           </li>
         ))}
+        <li className="text-blue-400">
+          <a href={experience.link} target="_blank" rel="noopener noreferrer">
+            {experience.link}
+          </a>
+        </li>
       </ul>
     </VerticalTimelineElement>
   );

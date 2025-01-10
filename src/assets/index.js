@@ -25,10 +25,13 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
+import naxalabs from "./company/naxalabs.png";
+import RRINTERIOR from "./company/RRINTERIOR.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import Trigon from "./company/Trigon.jpg";
+import RupakNepali from "./company/RupakNepali.png";
 
 export {
   logo,
@@ -59,4 +62,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  naxalabs,
+  RRINTERIOR,
+  Trigon,
+  RupakNepali,
 };
