@@ -121,7 +121,7 @@ const experiences = [
     icon: NaxaLabs,
     iconBg: "#383E56",
     date: "Jan 2021 - Dec 2024",
-    link: "http://www.naxalabs.com.np",
+    link: "https://www.facebook.com/abinash.chhetri.311",
     points: [
       "Developing and maintaining web applications using MEARN Technology.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
