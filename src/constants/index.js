@@ -19,7 +19,7 @@ import {
   jobit,
   tripguide,
   threejs,
-  naxalabs,
+  NaxaLabs,
   RRINTERIOR,
   Trigon,
   RupakNepali,
@@ -118,7 +118,7 @@ const experiences = [
   {
     title: "Junior Full Stack Developer",
     company_name: "Naksa Labs",
-    icon: naxalabs,
+    icon: NaxaLabs,
     iconBg: "#383E56",
     date: "Jan 2021 - Dec 2024",
     link: "http://www.naxalabs.com.np",

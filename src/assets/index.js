@@ -25,7 +25,7 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-import naxalabs from "./company/naxalabs.png";
+import NaxaLabs from "./company/NaxaLabs.png";
 import RRINTERIOR from "./company/RRINTERIOR.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -62,7 +62,7 @@ export {
   carrent,
   jobit,
   tripguide,
-  naxalabs,
+  NaxaLabs,
   RRINTERIOR,
   Trigon,
   RupakNepali,
