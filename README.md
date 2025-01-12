@@ -3,8 +3,8 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=abinashchhetri" alt="abinashchhetri" /></a> </p>
 
-- 👨‍💻 All of my projects are available at [https://www.abinashchhetri.com.np/](https://www.abinashchhetri.com.np/)
-- <a href="[https://github.com/ryo-ma/github-profile-trophy](https://www.abinashchhetri.com.np/)"><img src="https://github.com/user-attachments/assets/70043e95-4838-4d2c-8bd7-1721354f4394" alt="abinashchhetri" /></a>
+- 👨‍💻 Learn about me more at [https://www.abinashchhetri.com.np/](https://www.abinashchhetri.com.np/)
+- <a href="https://www.abinashchhetri.com.np/"><img src="https://github.com/user-attachments/assets/70043e95-4838-4d2c-8bd7-1721354f4394" alt="abinashchhetri" /></a>
 
 - 📫 How to reach me **abinashchhetri.work@gmail.com**
 
