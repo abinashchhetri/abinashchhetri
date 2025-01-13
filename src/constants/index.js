@@ -1,7 +1,6 @@
 import {
   mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -52,10 +51,6 @@ const services = [
   {
     title: "Backend Developer",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 

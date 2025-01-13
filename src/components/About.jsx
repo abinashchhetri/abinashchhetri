@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unknown-property */
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
@@ -45,11 +47,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I&apos;m a skilled software developer with experience in TypeScript and
+        JavaScript, and expertise in frameworks like React, Node.js, and .net.
+        I&apos;m a quick learner and collaborate closely with clients to create
+        efficient, scalable, and user-friendly solutions that solve real-world
+        problems. Let&apos;s work together to bring your ideas to life!
       </motion.p>
 
       <span className=" flex gap-4 items-center mt-5 ">
