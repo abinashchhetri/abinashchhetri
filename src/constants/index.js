@@ -45,7 +45,7 @@ const services = [
     icon: web,
   },
   {
-    title: ".net Maui ",
+    title: "Native Application Developer ",
     icon: mobile,
   },
   {
