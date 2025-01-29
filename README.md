@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Abinash Chhetri</h1>
 <h3 align="center">A developer Who can print HELLO WORLD in different languages</h3>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=abinashchhetri" alt="abinashchhetri" /></a> </p>
+<p align="left"> <img src="https://github-profile-trophy.vercel.app/?username=abinashchhetri" alt="abinashchhetri" /> </p>
 
 - 👨‍💻 Learn about me more at [https://www.abinashchhetri.com.np/](https://www.abinashchhetri.com.np/)
 - <a href="https://www.abinashchhetri.com.np/"><img src="https://github.com/user-attachments/assets/70043e95-4838-4d2c-8bd7-1721354f4394" alt="abinashchhetri" /></a>
