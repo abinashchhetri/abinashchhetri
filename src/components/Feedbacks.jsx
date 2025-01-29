@@ -43,6 +43,7 @@ const FeedbackCard = ({
 );
 
 const Feedbacks = () => {
+  const img = ["./img/rrinterirodirector.png"];
   return (
     <div className={`mt-12 bg-black-100 rounded-[20px]`}>
       <div

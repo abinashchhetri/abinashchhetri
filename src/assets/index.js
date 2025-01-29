@@ -35,6 +35,11 @@ import RupakNepali from "./company/RupakNepali.png";
 import gitLogo from "./git.svg";
 import linkedinLogo from "./linkedin.svg";
 import XLogo from "./XLogo.svg";
+import rrinterirodirector from "./rrinterirodirector.png";
+import rupaknepalidirector from "./rupaknepalidirector.png";
+import trigonDirector from "./trigonDirector.png";
+import gurkhaDirector from "./GurkhaDirector.png";
+import om from "./omm.jpg";
 
 export {
   logo,
@@ -72,4 +77,9 @@ export {
   gitLogo,
   linkedinLogo,
   XLogo,
+  rrinterirodirector,
+  gurkhaDirector,
+  rupaknepalidirector,
+  trigonDirector,
+  om,
 };

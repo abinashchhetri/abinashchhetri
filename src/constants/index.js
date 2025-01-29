@@ -22,6 +22,10 @@ import {
   RRINTERIOR,
   Trigon,
   RupakNepali,
+  gurkhaDirector,
+  rupaknepalidirector,
+  trigonDirector,
+  rrinterirodirector,
 } from "../assets";
 
 export const navLinks = [
@@ -116,9 +120,9 @@ const experiences = [
     icon: NaxaLabs,
     iconBg: "#383E56",
     date: "Jan 2021 - Dec 2024",
-    link: "https://www.facebook.com/abinash.chhetri.311",
+
     points: [
-      "Developing and maintaining web applications using MEARN Technology.",
+      "Developing and maintaining web applications using MERN Technology.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
@@ -171,27 +175,36 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "I thought it was impossible to make a website as beautiful as our product, but Abinash proved me wrong.",
+    name: "Guman Singh Gurung",
+    designation: "Director",
+    company: "Gurkha Arms Tours & Travels",
+    image: gurkhaDirector,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "I've never met a web developer who truly cares about their clients' success like Abinash does.",
+    name: "Rupak Nepali",
+    designation: "Trainner",
+    company: "Elite Muaythai & MMA",
+    image: rupaknepalidirector,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "After Abinash optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Bishal Gurung",
+    designation: "Director",
+    company: "RRINTERIOR",
+    image: rrinterirodirector,
+  },
+
+  {
+    testimonial:
+      "After Abinash designed and developed our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Anam Bhandari",
+    designation: "Director",
+    company: "Trigon Tours and Travels Pvt.Ltd",
+    image: trigonDirector,
   },
 ];
 
