@@ -21,3 +21,10 @@
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=abinashchhetri&show_icons=true&locale=en&layout=compact" alt="abinashchhetri" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=abinashchhetri&" alt="abinashchhetri" /></p>
+
+<h3 align="left"> Why i wana join developer community </h3>
+
+<p align="left"> To Improve my programming skils</p>
+<p align="left"> To Improve my soft skils</p>
+<p align="left"> To Improve my Leadership</p>
+<p align="left"> To share my skills</p>
