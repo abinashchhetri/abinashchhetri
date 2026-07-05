@@ -1,26 +1,228 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
+
+/* ─────────────────────────────────────────────────────────────────────────
+ * Design tokens — synthesized from DESIGN-notion.md / DESIGN-spotify.md /
+ * DESIGN-slack.md per MASTER PROMPT "DESIGN SYSTEM" section.
+ * Dark is the primary, default theme (Spotify's "content-first darkness").
+ * Light is a supported but secondary toggle target.
+ * ───────────────────────────────────────────────────────────────────────── */
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-sans);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-heading: var(--font-sans);
+
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+
+  /* Brand-specific surfaces/accents beyond the shadcn base set */
+  --color-surface-1: var(--surface-1);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-text-faint: var(--text-faint);
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-violet: var(--accent-violet);
+  --color-accent-cyan: var(--accent-cyan);
+  --color-warning: var(--warning);
+  --color-success: var(--success);
+  --color-hairline: var(--hairline);
+
+  /* Decorative-only sticker palette (Notion's rule: never a background/CTA fill) */
+  --color-sticker-sky: #62aef0;
+  --color-sticker-purple: #d6b6f6;
+  --color-sticker-pink: #ff64c8;
+  --color-sticker-orange: #dd5b00;
+  --color-sticker-teal: #2a9d99;
+  --color-sticker-green: #1aae39;
+
+  /* Radius scale — the one all three source docs converge on, plus pill */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 9999px;
+
+  /* Shadows — dark-mode-correct heavy system (Spotify), not light barely-there (Notion) */
+  --shadow-level-1: rgba(0, 0, 0, 0.3) 0px 8px 8px;
+  --shadow-level-2: rgba(0, 0, 0, 0.5) 0px 8px 24px;
+
+  /* Typography scale — size / line-height / letter-spacing / weight per token */
+  --text-hero: 64px;
+  --text-hero--line-height: 1.0;
+  --text-hero--letter-spacing: -2.125px;
+  --text-hero--font-weight: 700;
+
+  --text-heading: 40px;
+  --text-heading--line-height: 1.1;
+  --text-heading--letter-spacing: -1px;
+  --text-heading--font-weight: 700;
+
+  --text-card-title: 22px;
+  --text-card-title--line-height: 1.27;
+  --text-card-title--letter-spacing: -0.25px;
+  --text-card-title--font-weight: 700;
+
+  --text-stat: 50px;
+  --text-stat--line-height: 1.1;
+  --text-stat--letter-spacing: -0.6px;
+  --text-stat--font-weight: 700;
+
+  --text-body: 16px;
+  --text-body--line-height: 1.5;
+  --text-body--font-weight: 400;
+
+  --text-button-label: 14px;
+  --text-button-label--line-height: 1.0;
+  --text-button-label--letter-spacing: 1.4px;
+  --text-button-label--font-weight: 700;
+
+  --text-nav-link: 15px;
+  --text-nav-link--line-height: 1.4;
+  --text-nav-link--font-weight: 400;
+
+  --text-eyebrow: 12px;
+  --text-eyebrow--line-height: 1.33;
+  --text-eyebrow--letter-spacing: 0.125px;
+  --text-eyebrow--font-weight: 600;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  /* Light theme — secondary toggle target */
+  --background: #ffffff;
+  --foreground: #1d1d1f;
+  --card: #f6f5f4;
+  --card-foreground: #1d1d1f;
+  --popover: #ffffff;
+  --popover-foreground: #1d1d1f;
+  --primary: #0075de;
+  --primary-foreground: #ffffff;
+  --secondary: #eeeeee;
+  --secondary-foreground: #1d1d1f;
+  --muted: #eeeeee;
+  --muted-foreground: #615d59;
+  --accent: #e6e6e6;
+  --accent-foreground: #1d1d1f;
+  --destructive: #c53929;
+  --border: #e6e6e6;
+  --input: #eeeeee;
+  --ring: #0075de;
+
+  --surface-1: #f6f5f4;
+  --surface-2: #eeeeee;
+  --surface-3: #e6e6e6;
+  --text-faint: #7c7c7c;
+  --accent-primary: #0075de;
+  --accent-violet: #8b5cf6;
+  --accent-cyan: #62aef0;
+  --warning: #ffa42b;
+  --success: #1aae39;
+  --hairline: #e6e6e6;
+
+  --sidebar: #f6f5f4;
+  --sidebar-foreground: #1d1d1f;
+  --sidebar-primary: #0075de;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e6e6e6;
+  --sidebar-accent-foreground: #1d1d1f;
+  --sidebar-border: #e6e6e6;
+  --sidebar-ring: #0075de;
+
+  --radius: 0.625rem;
+}
+
+.dark {
+  /* Dark theme — the primary, default look (Spotify near-black cocoon) */
+  --background: #121212;
+  --foreground: #ffffff;
+  --card: #181818;
+  --card-foreground: #ffffff;
+  --popover: #181818;
+  --popover-foreground: #ffffff;
+  --primary: #0075de;
+  --primary-foreground: #ffffff;
+  --secondary: #1f1f1f;
+  --secondary-foreground: #ffffff;
+  --muted: #1f1f1f;
+  --muted-foreground: #b3b3b3;
+  --accent: #252525;
+  --accent-foreground: #ffffff;
+  --destructive: #f3727f;
+  --border: #2a2a2a;
+  --input: #1f1f1f;
+  --ring: #0075de;
+
+  --surface-1: #181818;
+  --surface-2: #1f1f1f;
+  --surface-3: #252525;
+  --text-faint: #7c7c7c;
+  --accent-primary: #0075de;
+  --accent-violet: #8b5cf6;
+  --accent-cyan: #62aef0;
+  --warning: #ffa42b;
+  --success: #1aae39;
+  --hairline: #2a2a2a;
+
+  --sidebar: #181818;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #0075de;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #252525;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #2a2a2a;
+  --sidebar-ring: #0075de;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+    /* Anchored sections clear the sticky navbar (native jumps + scrollIntoView
+       fallback); the Lenis path uses an explicit offset instead. */
+    scroll-padding-top: 5rem;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  /* Hero gradient-mesh — Slack's pastel-mesh technique, reskinned dark.
+     Radial stack of accent-primary/violet/cyan at low opacity over bg-base. */
+  .hero-gradient-mesh {
+    background-image:
+      radial-gradient(ellipse 60% 50% at 20% 20%, color-mix(in srgb, var(--accent-primary) 14%, transparent), transparent),
+      radial-gradient(ellipse 55% 45% at 80% 15%, color-mix(in srgb, var(--accent-violet) 12%, transparent), transparent),
+      radial-gradient(ellipse 65% 55% at 50% 85%, color-mix(in srgb, var(--accent-cyan) 10%, transparent), transparent);
+  }
 }
