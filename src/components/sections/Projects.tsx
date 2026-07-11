@@ -11,7 +11,7 @@ import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import ProjectCard from "@/components/shared/ProjectCard";
-import { FLAGSHIP_PROJECTS, FREELANCE_PROJECTS } from "@/content/projects";
+import { FLAGSHIP_PROJECTS, FREELANCE_PROJECTS, PERSONAL_PROJECTS } from "@/content/projects";
 import { ROUTES } from "@/lib/constants/routes.constants";
 import type { IProject } from "@/types/projects/projects.types";
 
@@ -41,6 +41,7 @@ const Projects = () => {
 
       <div className="mt-12 space-y-14">
         <ProjectGrid label="Production platforms · XDezo" projects={FLAGSHIP_PROJECTS} />
+        <ProjectGrid label="Currently building" projects={PERSONAL_PROJECTS} />
         <ProjectGrid label="Freelance & client work" projects={FREELANCE_PROJECTS} />
       </div>
     </section>

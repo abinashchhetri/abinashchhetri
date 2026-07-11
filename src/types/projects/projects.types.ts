@@ -2,14 +2,14 @@
 // Project Types
 // ─────────────────────────────────────────────────────────────────────────────
 // Shape of the projects, statically authored in content/projects/*.ts — there
-// is no CMS or API backing this content. Projects split into two categories:
-// "flagship" (the production XDezo platforms) and "freelance" (self-shipped
-// client/side projects surfaced from the personal site).
+// is no CMS or API backing this content. Projects split into three categories:
+// "personal" (the current full-stack build), "flagship" (the production XDezo
+// platforms), and "freelance" (self-shipped client/side projects).
 // ─────────────────────────────────────────────────────────────────────────────
 
 import type { TProjectAccent } from "@/types/global.types";
 
-export type TProjectCategory = "flagship" | "freelance";
+export type TProjectCategory = "personal" | "flagship" | "freelance";
 
 export interface IProjectStat {
   label: string;

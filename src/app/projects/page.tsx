@@ -1,22 +1,23 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // Projects Index
 // ─────────────────────────────────────────────────────────────────────────────
-// Lists every project, grouped into flagship (the production XDezo platforms)
-// and freelance (self-shipped client/side work). No fetch needed — content is
-// static and typed, so this stays a Server Component.
+// Lists every project, grouped into personal (the current full-stack build),
+// flagship (the production XDezo platforms), and freelance (self-shipped
+// client/side work). No fetch needed — content is static and typed, so this
+// stays a Server Component.
 // ─────────────────────────────────────────────────────────────────────────────
 
 import type { Metadata } from "next";
 
 import ProjectCard from "@/components/shared/ProjectCard";
-import { FLAGSHIP_PROJECTS, FREELANCE_PROJECTS } from "@/content/projects";
+import { FLAGSHIP_PROJECTS, FREELANCE_PROJECTS, PERSONAL_PROJECTS } from "@/content/projects";
 import { buildMetadata } from "@/lib/seo";
 import type { IProject } from "@/types/projects/projects.types";
 
 export const metadata: Metadata = buildMetadata({
   title: "Projects",
   description:
-    "Real, shipped work — production marketplace and booking platforms plus freelance client projects.",
+    "Real, shipped work — a current full-stack finance app, production marketplace and booking platforms, plus freelance client projects.",
   path: "/projects",
 });
 
@@ -51,6 +52,11 @@ export default function ProjectsPage() {
           eyebrow="Production platforms · XDezo"
           heading="Flagship work"
           projects={FLAGSHIP_PROJECTS}
+        />
+        <ProjectGroup
+          eyebrow="Currently building"
+          heading="Latest project"
+          projects={PERSONAL_PROJECTS}
         />
         <ProjectGroup
           eyebrow="Freelance & client work"
